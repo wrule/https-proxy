@@ -1,12 +1,14 @@
-const httpProxy = require('http-proxy');
-const fs = require('fs');
+import fs from 'fs';
+import http from 'http';
+import https from 'https';
+import httpProxy from 'http-proxy';
 
 httpProxy.createServer({
   ssl: {
     key: fs.readFileSync('./cert/key.pem', 'utf8'),
     cert: fs.readFileSync('./cert/crt.pem', 'utf8'),
   },
-  target: 'https://www.baidu.com',
+  target: 'https://www.baidu.com/',
   changeOrigin: true,
-  secure: true, // Depends on your needs, could be false.
+  secure: true,
 }).listen(8877);
