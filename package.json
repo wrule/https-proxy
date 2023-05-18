@@ -1,0 +1,8 @@
+{
+  "name": "https-proxy",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/wrule/https-proxy.git",
+  "license": "MIT",
+  "private": false
+}
