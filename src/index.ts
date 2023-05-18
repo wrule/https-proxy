@@ -1,2 +1,11 @@
+import fs from 'fs';
+import http from 'http';
+import https from 'https';
+import express from 'express';
+import { createProxyMiddleware } from 'http-proxy-middleware';
 
-console.log('你好，世界');
+function main() {
+  console.log(1234);
+}
+
+main();

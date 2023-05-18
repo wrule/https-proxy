@@ -9,5 +9,11 @@
   },
   "repository": "https://github.com/wrule/https-proxy.git",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.0",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  }
 }
